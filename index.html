@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js"></script>
+</head>
+<body>
+
+<h1>Data Types</h1>
+<p><b>Data types</b> in programming define the type of value a variable can hold, determining how the computer
+    interprets and processes that value.</p><br>
+<p>Go to the JS Console and type</p>
+<pre><code>typeof 42
+</code></pre>
+<br>
+<pre><code>typeof "hello"
+</code></pre>
+<br>
+<pre><code>typeof false
+</code></pre>
+<ul>
+    <li><b>Numbers</b>: Represent both integers and floating-point values. Example: <code>42</code>, <code>3.14</code>.
+        JavaScript uses 64-bit floating-point format for all numbers.
+        <pre><code>const age = 25;
+const pi = 3.14;
+</code></pre>
+        <br></li>
+    <li><b>Strings</b>: Used for text, enclosed in single quotes (<code>'</code>), double quotes (<code>"</code>), or
+        backticks (<code>`</code>). Example: <code>"Hello"</code>, <code>'World'</code>. Strings are immutable, meaning
+        their content cannot be changed.
+        <pre><code>const greeting = "Hello, World!";
+</code></pre>
+        <br></li>
+    <li><b>Booleans</b>: Represent true/false values, commonly used for conditions and logical operations. Example:
+        <code>true</code>, <code>false</code>.
+        <pre><code>const isEven = (5 % 2 === 0); // false
+</code></pre>
+    </li>
+</ul>
+<br>
+<br>
+<h1>Strings and Sting Literals</h1><br>
+<ul>
+    <li><b>Basic Syntax</b>: Use backticks (<code>`</code>) to create string literals, which allow for embedding
+        expressions and multiline strings.
+        <pre><code>const greeting = `Hello, World!`;
+</code></pre>
+        <br></li>
+    <li><b>Embed Expressions with <code>${}</code></b>: Use the <code>${}</code> syntax to interpolate variables or
+        expressions directly into a string.
+        <pre><code>const name = "Hooter T. Owl";
+const message = `Welcome, ${name}!`;
+</code></pre>
+        <br></li>
+    <li><b>Multiline Strings</b>: String literals can span multiple lines without needing special characters like <code>\n</code>.
+        <pre><code>const multiline = `This is line one.
+This is line two.`;
+</code></pre>
+        <br></li>
+    <li><b>Supports Nested Expressions</b>: Embed any JavaScript expression inside <code>${}</code> for dynamic content.
+        <pre><code>const a = 5, b = 3;
+const result = `The sum of ${a} and ${b} is ${a + b}.`;
+</code></pre>
+    </li>
+</ul>
+
+</body>
+</html>
